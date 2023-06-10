@@ -41,12 +41,9 @@ public class Player_Animation : MonoBehaviour
         /* Essentially just */
         /** y = verticalInput; or y = movementInput.y; **/
         /** x = horizontalInput; or x = movementInput.x; **/
-        print("Horizontal Movement = " + horizontalMovement);
-        print("Vertical Movement = " + verticalMovement);
 
         /* Is the dog sprinting? (A component of InputManager */
         animator.SetBool("IsSprinting", playerLocomotion.isSprinting);
-        print(playerLocomotion.isSprinting);
 
         #region Snapped Horizontal
         if (horizontalMovement > 0 && horizontalMovement < 0.55f)
