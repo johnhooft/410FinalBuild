@@ -26,6 +26,9 @@ public class input : MonoBehaviour
     private int flag2;
     private int Riddle_solved;
 
+    public AudioSource audioSource;
+    public AudioClip puzzleSolvedSound;
+
 
     // Start is called before the first frame update
     void Start()
@@ -82,6 +85,7 @@ public class input : MonoBehaviour
         if(inputs.ToLower() == answers[riddle].ToLower())
         {
             textElement.text = "Congrats!! You have solved my riddle! You may pass..." ;
+            audioSource.PlayOneShot(puzzleSolvedSound);
             //(player.GetComponent(scr) as MonoBehaviour).enabled = true;
             dogstopper.SetActive(false);
             //Destroy(Text2);
