@@ -116,6 +116,7 @@ public class InputManager : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.Q))
             {
                 Time.timeScale = 1;
+                StaticPlayerInfo.ResetStatic();
                 SceneManager.LoadScene(5);
             }
         }

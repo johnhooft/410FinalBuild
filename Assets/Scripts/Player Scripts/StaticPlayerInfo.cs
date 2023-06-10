@@ -26,4 +26,15 @@ public class StaticPlayerInfo : MonoBehaviour
 
     // Initial title screen load
     static public bool titlescreen = false;
+
+    static public void ResetStatic()
+    {
+        InitLevel1 = true;
+        InitMiniGame1 = true;
+        MiniGame1Completion = false;
+        redBoneCount = 0;
+        allBonesCollected = false;
+        cowboyhat = false;
+    }
+
 }

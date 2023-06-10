@@ -34,6 +34,7 @@ public class WinText : MonoBehaviour
     IEnumerator WaitForSec()
     {
         yield return new WaitForSeconds(30);
+        StaticPlayerInfo.ResetStatic();
         SceneManager.LoadScene(5);
     }
 }

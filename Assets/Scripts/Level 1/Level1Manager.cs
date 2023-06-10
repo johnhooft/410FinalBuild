@@ -20,7 +20,6 @@ public class Level1Manager : MonoBehaviour
         }
         RemoveInactiveKeys();
         SetKeyText();
-        //StaticPlayerInfo.InitLevel1 = false;
     }
 
     void Update()

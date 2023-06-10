@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class level3Manager : MonoBehaviour
+public class Level3Manager : MonoBehaviour
 {
     public GameObject resetPos;
     void OnCollisionEnter(Collision other) 
